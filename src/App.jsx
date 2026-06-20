@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-import Taskboard from './components/Taskboard.jsx'
-import UserContext from './contexts/UserContext.js'
+import { useState } from 'react';
+import Taskboard from './components/Taskboard.jsx';
+import UserContext from './contexts/UserContext.js';
 
+// Root component: provides user ID context and renders the taskboard.
 function App() {
   const [id, setId] = useState();
 
