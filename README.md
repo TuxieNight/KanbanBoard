@@ -24,7 +24,7 @@ Taskboard is a lightweight Kanban-style task management tool built with <strong>
 - React Bootstrap — layout and form components
 
 ## How It Works
-When the application loads, it checks for an existing Supabase user. If none is found, an anonymous user is created automatically. All tasks are tied to this user ID.
+When the application loads, it checks for an existing Supabase user. If none is found, an anonymous user is created automatically. All tasks are tied to this user ID, and users can only see the tasks they create.
 
 Dragging a task updates the UI immediately and then writes the change to Supabase to improve user experience. Once the update completes, the application re-fetches tasks to ensure the board always reflects the authoritative state in the database.
 
